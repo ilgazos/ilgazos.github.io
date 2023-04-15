@@ -11,11 +11,11 @@ const config = {
     },
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: '',
+    twitter: 'ilgazos',
+    mastodon: '',
     facebook: '',
-    instagram: '',
+    instagram: 'ilgazos',
     dribbble: '',
     behance: '',
     medium: 'arifszn',
@@ -23,9 +23,9 @@ const config = {
     stackoverflow: '', // format: userid/username
     skype: '',
     telegram: '',
-    website: 'https://arifszn.com',
+    website: 'https://ilgazos.github.io',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: '',
   },
   resume: {
     fileUrl:
