@@ -23,7 +23,6 @@ const config = {
     stackoverflow: '', // format: userid/username
     skype: '',
     telegram: 'ilgazos',
-    whatsapp: '+2250142213970',
     website: 'https://ilgazos.github.io',
     phone: '+2250142213970',
     email: '',
@@ -106,7 +105,7 @@ const config = {
   ],
   // Display blog posts from your medium or dev account. (Optional)
   blog: {
-    source: '', // medium | dev
+    source: 'dev', // medium | dev
     username: 'ilgazos', // to hide blog section, keep it empty
     limit: 0, // How many posts to display. Max is 10.
   },
