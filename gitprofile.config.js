@@ -93,19 +93,19 @@ const config = {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
       imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
+      link: 'https://ilgazos.github.io',
     },
     {
       title: 'Project Name',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
       imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
+      link: 'https://ilgazos.github.io',
     },
   ],
   // Display blog posts from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
+    source: 'medium', // medium | dev
     username: 'ilgazos', // to hide blog section, keep it empty
     limit: 0, // How many posts to display. Max is 10.
   },
