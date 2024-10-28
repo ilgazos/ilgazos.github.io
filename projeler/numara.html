@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefon Numarası Girin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            border: none;
+        }
+
+        .form-range {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 12px;
+            border-radius: 5px;
+            background: #333;
+            outline: none;
+            opacity: 0.9;
+            transition: opacity .2s;
+        }
+
+        .form-range:hover {
+            opacity: 1;
+        }
+
+        .form-range::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #4caf50;
+            border: 2px solid #388e3c;
+            cursor: pointer;
+            transition: background .3s;
+        }
+
+        .form-range::-moz-range-thumb {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #4caf50;
+            border: 2px solid #388e3c;
+            cursor: pointer;
+            transition: background .3s;
+        }
+
+        .form-range::-ms-thumb {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #4caf50;
+            border: 2px solid #388e3c;
+            cursor: pointer;
+            transition: background .3s;
+        }
+
+        #deger {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e0e0e0;
+            background: #2e2e2e;
+            border: 1px solid #4caf50;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card shadow">
+        <div class="card-header text-center">
+            <h2 class="mb-0">Lütfen telefon numaranızı girin:</h2>
+        </div>
+        <div class="card-body">
+            <input type="range" class="form-range" id="numara" min="5000000000" max="5999999999" value="5526850975" step="1">
+            <p class="text-center" id="deger">Tel No: <strong>5526850975</strong></p>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    var input = document.getElementById("numara");
+    var degerGoster = document.getElementById("deger");
+
+    input.addEventListener("input", function() {
+        degerGoster.innerHTML = "Tel No: <strong>" + input.value + "</strong>";
+    });
+
+    window.onload = function() {
+        degerGoster.innerHTML = "Tel No: <strong>" + input.value + "</strong>";
+    };
+</script>
+</body>
+</html>
